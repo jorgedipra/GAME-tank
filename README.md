@@ -1,3 +1,3 @@
 # GAME-space
 juego, en  html / css / javascript
-:D
+Usando grid de css de crea el escenario
