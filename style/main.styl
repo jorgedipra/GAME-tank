@@ -1,0 +1,109 @@
+body{
+	background-color #333;
+}
+Max = 50
+Max1 = Max + 1
+Max0 = Max - 2
+mitOne = Max/2
+mitTwo = Max/5
+mitThree = mitTwo*4
+bossini=  mitOne - 1
+main{
+	background-color: #000	
+	background-image url('../img/fondo.jpg');
+	background-size 100% 100%
+	border: solid 1px #000;
+	display grid;
+	grid-gap: 1px
+	grid-template-columns: repeat(Max, 1fr)
+	grid-template-rows: repeat(Max, 1fr)
+	height:600px;
+	left:0
+	margin-left:auto
+	margin-right:auto
+	position: absolute;
+	right:0
+	top: 40px
+	width: 1000px;
+	overflow: hidden;
+}
+#nino{
+	margin-left:auto
+	margin-right:auto
+	left:-1000px
+	right:0
+	top:400px
+	z-index 1
+	position: absolute
+	width: 250px;
+}
+#Tank{
+	grid-column: 1 / 4
+	grid-row: Max0 / Max1
+	background-image url('../img/carrofuturistico.png')
+	background-position: -12px -55%
+	background-size: 22em 12em
+}
+#disparo{
+	grid-row: Max0 / Max
+	width: 75%;
+	height:150%;
+	border-radius 100%;	
+}
+#boss{
+	grid-column: bossini / mitOne+6
+	grid-row:  1 / 10
+	background: url("../img/boss.gif")
+	background-size 100% 100%;
+}
+#one
+	grid-column-start mitOne
+	grid-column-end mitOne+5
+	grid-row-start: mitOne 
+	grid-row-end: mitOne+2
+	text-align center
+	
+#two
+	grid-column: mitTwo / mitTwo+5
+	grid-row: mitTwo / mitTwo+2
+	text-align center
+	
+#three
+	grid-column: mitThree / mitThree+5
+	grid-row: mitTwo / mitTwo+2
+	text-align center
+.bloque{
+	background url("../img/bola1.gif")
+	box-shadow: 0 0 40px #0AEFF4FF;
+	background-size: 159% 114%
+	background-position: -32px -4px
+	border-radius 100%
+	width: 100%
+	height: 200%;
+}
+.vida{
+	background: #5FE41AFF
+	height 10px;
+	margin-left -50px;
+	margin-top -15px
+	opacity 0.3
+	position: absolute;
+	width: 100px;
+}
+
+.fuego{
+	display: none;
+	position absolute
+	width: 100px;
+	margin-top -55px
+	margin-left -40px
+}
+.disparo{
+	display: none
+	width: 80%
+	height:200%
+	border-radius 100%	
+	background red
+	box-shadow 0 0 40px red
+	opacity: 0.54
+}
